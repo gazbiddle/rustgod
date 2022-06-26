@@ -1,0 +1,17 @@
+[package]
+name = "rustgod"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# parse command line options
+clap = { version = "3.0", features = ["derive"] }
+# use standardized config and data dirs
+directories = "3.0.2"
+
+#process toml config files
+serde = { version = "1.0.127", features = ["derive"] }
+toml = "0.5.8"
+rand = "0.7.3"
